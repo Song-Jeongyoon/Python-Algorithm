@@ -3,6 +3,7 @@
 # ABC를 최소회수로 눌러서 T초가 되도록
 # 세 버튼으로 T를 맞출 수 없으면 -1 출력
 
+# 1번째 방법
 t = int(input())
 acount = 0
 bcount = 0
@@ -26,5 +27,14 @@ if t % 10 == 0:
 else:
     print(-1)
 
-    
 
+# 2번째 방법
+t = int(input())
+acount = t // 300
+bcount = (t % 300) // 60
+ccount = ((t % 300) % 60) // 10
+
+if t % 10 != 0:
+  print(-1)
+else:
+  print(acount, bcount, ccount)
