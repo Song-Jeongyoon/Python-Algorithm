@@ -41,7 +41,7 @@ for index in cafeteria_order:
     
     
 '''
-# 또 다른 예시답안
+# 예시답안
 n = int(input())
 
 data = list(map(int, input().split()))
