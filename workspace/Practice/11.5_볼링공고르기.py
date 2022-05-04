@@ -17,7 +17,5 @@ for i in range(1, m + 1):
     n -= array[i]
     # b가 선택하는 경우의 수와 곱하기
     count += array[i] * n
-    print('array[i] =', array[i])
-    print('n =', n)
     
 print(count)
