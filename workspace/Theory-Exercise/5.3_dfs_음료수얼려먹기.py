@@ -10,8 +10,8 @@ def dfs(x, y):
     # 차례대로 노드 방문
     if graph[x][y] == 0:
         graph[x][y] = 1
-        dfs(x + 1, y) # x+1 이런식으로 붙여서 쓰면 안됨
-        dfs(x, y + 1) # 무조건 문자와 연산자 사이 띄우기
+        dfs(x + 1, y)
+        dfs(x, y + 1) 
         dfs(x - 1, y)
         dfs(x, y - 1)
         return True
@@ -24,6 +24,5 @@ for i in range(n):
         if dfs(i, j) == True:
             icecream += 1
 print(icecream)
-
 
 

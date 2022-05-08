@@ -43,3 +43,4 @@ def solution(p):
                 u[i] = '('
         answer += "".join(u)
     return answer
+
