@@ -17,4 +17,17 @@
 
 """
 
+n = int(input())
+result = 0
+
+# n이 5의 배수가 될 때까지 3씩 제거
+while n >= 0:
+    if(n % 5 == 0):
+        result += n // 5
+        print(result)
+        break
+    n -= 3
+    result += 1
+else:
+    print(-1)
     
