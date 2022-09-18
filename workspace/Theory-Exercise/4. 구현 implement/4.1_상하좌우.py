@@ -1,3 +1,4 @@
+# page 110
 # 예제 4-1 상하좌우
 
 n = int(input())
@@ -15,8 +16,7 @@ for plan in plans:
         if plan == move_types[i]:
             nx = x + dx[i]
             ny = y + dy[i]
-    # 정사각형을 벗어날 경우
-    if(nx < 1 or nx > n or ny < 1 or ny > n):
+    if nx < 1 or nx > n or ny < 1 or ny > n:
         continue
     x, y = nx, ny
     
